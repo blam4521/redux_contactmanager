@@ -7,7 +7,8 @@ import {
 } from "../actions/types";
 
 const initialState = {
-  contacts: []
+  contacts: [],
+  contact: {}
 };
 
 export default function(state = initialState, action) {
