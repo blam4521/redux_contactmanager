@@ -59,7 +59,11 @@ class Contact extends Component {
 }
 
 Contact.propTypes = {
-  contact: PropTypes.object.isRequired
+  contact: PropTypes.object.isRequired,
+  deleteContact: PropTypes.func.isRequired
 };
 
-export default Contact;
+export default connect(
+  null,
+  { deleteContact }
+)(Contact);
